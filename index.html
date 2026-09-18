@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multi-Team Scoreboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Multi-Team Scoreboard</h1>
+            <p>Manage teams, scores, rounds and timer</p>
+        </header>
+
+        <!-- Timer Section -->
+        <section class="timer-section">
+
+            <h2>Round Timer</h2>
+
+            <div id="timer">01:00</div>
+
+            <div class="timer-buttons">
+                <button id="startBtn" onclick="startTimer()">Start</button>
+                <button onclick="pauseTimer()">Pause</button>
+                <button onclick="resetTimer()">Reset</button>
+            </div>
+
+        </section>
+
+
+        <!-- Round Section -->
+        <section class="round-section">
+
+            <h2>Round <span id="roundNumber">1</span></h2>
+
+            <button onclick="nextRound()">
+                Next Round
+            </button>
+
+        </section>
+
+
+        <!-- Add Team -->
+        <section class="add-team">
+
+            <input
+                type="text"
+                id="teamName"
+                placeholder="Enter team name"
+            >
+
+            <button onclick="addTeam()">
+                Add Team
+            </button>
+
+        </section>
+
+
+        <!-- Teams -->
+        <section>
+
+            <h2 class="section-title">Teams</h2>
+
+            <div id="teamsContainer" class="teams-container">
+
+                <!-- Teams will be added here using JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Reset -->
+        <button class="reset-game" onclick="resetGame()">
+            Reset Game
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

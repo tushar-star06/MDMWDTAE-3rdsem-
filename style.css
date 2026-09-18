@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+
+/* Timer */
+
+.timer-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.timer-section h2 {
+    margin-bottom: 15px;
+}
+
+#timer {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Buttons */
+
+button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+.timer-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Round */
+
+.round-section {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-section h2 {
+    font-size: 24px;
+}
+
+
+/* Add Team */
+
+.add-team {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.add-team input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+/* Teams */
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+
+/* Team Card */
+
+.team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.team-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.score {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.round-score {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.score-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.remove-btn {
+    background: #dc2626;
+}
+
+.remove-btn:hover {
+    background: #991b1b;
+}
+
+
+/* Leader */
+
+.leader {
+    border: 3px solid #4f46e5;
+}
+
+
+/* Reset */
+
+.reset-game {
+    display: block;
+    margin: 30px auto;
+    background: #dc2626;
+}
+
+.reset-game:hover {
+    background: #991b1b;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #timer {
+        font-size: 45px;
+    }
+
+    .round-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .add-team {
+        flex-direction: column;
+    }
+
+}
